@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroidFragmentIntro</string>
+    <string name="capacity">330 \n ml</string>
+    <string name="cola">CocaCola</string>
+    <string name="fanta">Fanta</string>
+    <string name="sprite">Sprite</string>
+</resources>

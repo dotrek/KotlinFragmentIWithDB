@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/DialogStyle">
+
+
+    <ImageView
+        android:id="@+id/itemDetailsImage"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="left"
+        android:src="@drawable/cola" />
+
+    <LinearLayout
+        android:id="@+id/detailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/itemDetailsImage"
+        android:layout_toStartOf="@id/priceButton"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textDialog"
+            style="@style/TextViewStyle"
+            android:layout_height="wrap_content"
+            android:maxWidth="128dp" />
+
+        <TextView
+            android:id="@+id/textDialog1"
+            style="@style/TextViewStyle"
+            android:text="@string/capacity"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/priceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="end"
+        android:background="@drawable/button_custom"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

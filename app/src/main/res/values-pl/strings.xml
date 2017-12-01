@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Wstep do fragmentów w android</string>
+    <string name="capacity">330 \n ml</string>
+    <string name="cola">CocaCola w puszce</string>
+    <string name="fanta">Fanta w puszce</string>
+    <string name="sprite">Sprite w puszce</string>
+</resources>

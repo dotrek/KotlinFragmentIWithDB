@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.item_view.view.*
 /**
  * Created by dotre on 01.11.2017.
  */
-class ItemListAdapter(context: Context) : BaseAdapter() {
+class ItemListAdapter(val context: Context) : BaseAdapter() {
     var lista: ArrayList<Item>? = ArrayList()
     private var inflater: LayoutInflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 
@@ -24,15 +24,15 @@ class ItemListAdapter(context: Context) : BaseAdapter() {
         return rowView
     }
 
-     fun setImage(rowView: View, item: Item) {
+    private fun setImage(rowView: View, item: Item) {
         when (item.itemName) {
-            "CocaCola" -> {
+            context.resources.getText(R.string.cola) -> {
                 rowView.itemImage!!.setImageResource(R.drawable.cola)
             }
-            "Fanta" -> {
+            context.resources.getText(R.string.fanta) -> {
                 rowView.itemImage!!.setImageResource(R.drawable.fanta)
             }
-            "Sprite" -> {
+            context.resources.getText(R.string.sprite) -> {
                 rowView.itemImage!!.setImageResource(R.drawable.sprite)
             }
         }

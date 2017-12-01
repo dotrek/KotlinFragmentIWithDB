@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">introducción a fragmentos en Android</string>
+    <string name="capacity">330 \n ml</string>
+    <string name="cola">bebida CocaCola</string>
+    <string name="fanta">bebida Fanta</string>
+    <string name="sprite">bebida Sprite</string>
+</resources>

@@ -1,20 +1,19 @@
 package com.example.dotre.androidfragmentintro
 
-import android.widget.ImageView
+import android.arch.persistence.room.ColumnInfo
+import android.arch.persistence.room.Entity
+import android.arch.persistence.room.PrimaryKey
 
 /**
  * Created by dotre on 01.11.2017.
  */
-class Item(itemName: String, itemImage: ImageView?, price: Double) {
-    var itemName: String = itemName
-        get() = field ?: "Just Item"
-        set(value) {
-            this.itemName = value
-        }
-    var price: Double = price
-        set(value) {
-            this.price = value
-        }
+@Entity(tableName = "items")
+data class Item(@ColumnInfo(name = "item_name") var itemName: String?,
+                @ColumnInfo(name = "item_price") var price: Double?) {
+    @ColumnInfo(name = "id")
+    @PrimaryKey(autoGenerate = true)
+    var id: Int = 0
+
     override fun toString(): String {
         return itemName + " which costs " + price.toString()
     }

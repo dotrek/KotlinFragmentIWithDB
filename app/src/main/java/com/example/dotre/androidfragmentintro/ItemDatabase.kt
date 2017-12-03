@@ -8,7 +8,7 @@ import android.content.Context
 /**
  * Created by dotre on 30.11.2017.
  */
-@Database(entities = arrayOf(Item::class), version = 0, exportSchema = false)
+@Database(entities = arrayOf(Item::class), version = 1, exportSchema = false)
 abstract class ItemDatabase : RoomDatabase() {
     abstract fun itemDao(): ItemDao
 
@@ -18,7 +18,9 @@ abstract class ItemDatabase : RoomDatabase() {
         var dbInstance: ItemDao? = null
         fun getInstance(context: Context): ItemDao? {
             if (dbInstance == null)
-                dbInstance = Room.databaseBuilder(context, ItemDatabase::class.java, databaseName).build().itemDao()
+                synchronized(ItemDatabase::class) {
+                    dbInstance = Room.databaseBuilder(context, ItemDatabase::class.java, databaseName).build().itemDao()
+                }
             return dbInstance;
         }
     }

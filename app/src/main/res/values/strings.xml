@@ -4,4 +4,12 @@
     <string name="cola">CocaCola</string>
     <string name="fanta">Fanta</string>
     <string name="sprite">Sprite</string>
+    <string name="add_item">Add item</string>
+    <string name="cancel">Cancel</string>
+
+    <string-array name="item_names">
+        <item>CocaCola</item>
+        <item>Fanta</item>
+        <item>Sprite</item>
+    </string-array>
 </resources>

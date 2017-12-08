@@ -6,6 +6,7 @@
     <string name="sprite">Sprite</string>
     <string name="add_item">Add item</string>
     <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
 
     <string-array name="item_names">
         <item>CocaCola</item>

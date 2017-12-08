@@ -11,9 +11,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun showAddDialog() {
-        val fm = fragmentManager as FragmentManager
-        val addItemDialogFragment = MyDialog.newInstance("Add new item")
-        addItemDialogFragment.show(fm, "add")
-    }
+//    fun showAddDialog() {
+//        val fm = fragmentManager as FragmentManager
+//        val addItemDialogFragment = MyDialog.newInstance("Add new itemDao")
+//        addItemDialogFragment.show(fm, "add")
+//    }
 }

@@ -15,6 +15,6 @@ data class Item(@ColumnInfo(name = "item_name") var itemName: String?,
     var id: Int = 0
 
     override fun toString(): String {
-        return itemName + " which costs " + price.toString()
+        return itemName.toString()
     }
 }

@@ -43,7 +43,7 @@ class ItemListAdapter(val context: Context) : BaseAdapter() {
     }
 
     override fun getItemId(position: Int): Long {
-        return position.toLong();
+        return position.toLong()
     }
 
     override fun getCount(): Int {
